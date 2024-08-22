@@ -27,14 +27,21 @@
             content-visibility: auto;
           }
         }
-      </style>
+    </style>
     <!-- Customizing Tailwind CSS Config -->
     <script>
         tailwind.config = {
             theme: {
+                fontFamily: {
+                    'manrope': ['Manrope', 'sans-serif'],
+                },
                 extend: {
+                    backgroundImage: {
+                        'white-gradient': "linear-gradient(to top, #fff, #eee)",
+                    },
                     colors: {
-                        clifford: '#da373d',
+                        'grelow': '#abef5f',
+                        'grelow-light': '#abef5f80',
                     }
                 }
             }
@@ -43,9 +50,72 @@
 
 </head>
 
-<body>
+<body class="font-manrope">
 
-    <h1 class="text-3xl py-3 mx-auto bg-green-500 mt-6 text-center">Muhammad</h1>
+    <!-- Header Section -->
+    <header class="container mx-auto pt-12  
+      border min-h-96 bg-white-gradient">
+        <!-- Navbar Section -->
+        <nav>
+            <div class="navbar">
+                <!-- Logo -->
+                <div class="navbar-start">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-right bg-grelow -rotate-45 p-1 rounded-full">
+                        </i>
+                        <h1 class="text-xl font-black">
+                            Rinterio
+                        </h1>
+                    </div>
+                </div>
+                <!-- Navbar Menu -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 duration-300 transition">
+                        <li class="hover:font-bold transition">
+                            <a>Home</a>
+                        </li>
+                        <li class="hover:font-bold transition">
+                            <a>Services</a>
+                        </li>
+                        <li class="hover:font-bold transition">
+                            <a>Portfolio</a>
+                        </li>
+                        <li class="hover:font-bold transition">
+                            <a>Blogs</a>
+                        </li>
+                        <li class="hover:font-bold transition">
+                            <a>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Navbar Right-Side Button -->
+                <div class="navbar-end">
+                    <div class="flex items-center gap-3 mr-3">
+                        <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"></i>
+                        <div class="w-8 bg-white p-2 rounded-full">
+                            <img src="./icons/shopping-cart.png" alt="Shopping-cart">
+                        </div>
+                    </div>
+                    <div class="bg-grelow px-4 py-2 rounded-full flex items-center gap-2">
+                        <a class="font-extrabold" href="#">Book Consult</a>
+                        <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 p-1 rounded-full">
+                        </i>
+                    </div>
+                </div>
+                <!-- Menu Bar For Medium Device -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+
+        </section>
+    </header>
 
 </body>
 
