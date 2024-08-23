@@ -42,6 +42,7 @@
                     colors: {
                         'grelow': '#abef5f',
                         'grelow-light': '#abef5f80',
+
                     }
                 }
             }
@@ -53,8 +54,8 @@
 <body class="font-manrope">
 
     <!-- Header Section -->
-    <header class="min-h-96 bg-white-gradient lg:pt-8 md:pt-6 pt-4">
-        <section class="container mx-auto">
+    <header class="bg-white-gradient lg:pt-8 md:pt-6 pt-4">
+        <section class="container mx-auto mb-5">
             <!-- Navbar Section -->
             <nav class="">
                 <div class="navbar">
@@ -138,21 +139,72 @@
         </section>
     </header>
 
-    <!-- About Us Section -->
-    <section>
+    <!-- Main Body About us + Work Section; -->
+    <main class="bg-gray-100 lg:pt-16 md:pt-12 py-5 mt-20">
+        <!-- About Us Section -->
+        <section class="container mx-auto flex flex-col justify-center">
+            <!-- Background Image -->
+            <div class="2xl:w-[1280px] 2xl:mx-auto">
+                <img class="-translate-x-12 hidden min-[1140px]:block" src="./icons/Vector.png" alt="">
+                <div
+                    class="bg-white p-2 rounded-full w-32 flex gap-2 items-center justify-center mt-4 cursor-pointer hover:font-semibold hover:bg-slate-200 transition">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">
+                        About Us
+                    </a>
+                </div>
+            </div>
+            <!-- About Main Content -->
+            <div class="hero-content flex-col lg:flex-row mx-auto">
+                <div class="text-center lg:text-left lg:w-1/2">
+                    <h1 class="text-5xl font-black">
+                        We design thoughtful, liveable spaces
+                    </h1>
+                    <p class="py-6 font-medium">
+                        The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <!-- About Card -->
+                    <div class="lg:space-y-5 space-y-5  md:flex gap-4 md:space-y-0 lg:block">
+                        <!-- About Card 1 -->
+                        <div class="bg-white p-4 flex gap-5 items-center text-left rounded-xl">
+                            <div>
+                                <img src="./icons/commercial.png" alt="Residential Icon">
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold cursor-pointer hover:underline max-w-32">
+                                    Commercial
+                                </h3>
+                                <p class="font-medium">
+                                    The barn house captivates with its blend of rustic charm and modern.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- About Card 2 -->
+                        <div class="bg-white p-4 flex gap-5 items-center text-left rounded-xl">
+                            <div>
+                                <img src="./icons/residential.png" alt="Residential Icon">
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold cursor-pointer hover:underline max-w-32">
+                                    Residential
+                                </h3>
+                                <p class="font-medium">
+                                    The barn house captivates with its blend of rustic charm and modern.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:w-1/2 w-full">
+                    <img src="./images/thoughtful.png" alt="">
+                </div>
+            </div>
+        </section>
 
-    </section>
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <!-- Works Process -->
+        <section></section>
+    </main>
 
 </body>
 
