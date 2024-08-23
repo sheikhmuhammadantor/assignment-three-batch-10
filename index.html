@@ -23,8 +23,8 @@
     <!-- Adding Custom CSS -->
     <style type="text/tailwindcss">
         @layer utilities {
-          .content-auto {
-            content-visibility: auto;
+          .hiddenr {
+            /* display: none !important; */
           }
         }
     </style>
@@ -51,10 +51,10 @@
 
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope bg-gray-100">
 
     <!-- Header Section -->
-    <header class="bg-white-gradient lg:pt-8 md:pt-6 pt-4">
+    <header class="bg-white-gradient lg:py-8 md:py-6 py-4">
         <section class="container mx-auto mb-5">
             <!-- Navbar Section -->
             <nav class="">
@@ -140,14 +140,14 @@
     </header>
 
     <!-- Main Body About us + Work Section; -->
-    <main class="bg-gray-100 lg:pt-16 md:pt-12 py-5 mt-20">
+    <main class="py-5">
         <!-- About Us Section -->
         <section class="container mx-auto flex flex-col justify-center">
             <!-- Background Image -->
             <div class="2xl:w-[1280px] 2xl:mx-auto">
                 <img class="-translate-x-12 hidden min-[1140px]:block" src="./icons/Vector.png" alt="">
                 <div
-                    class="bg-white p-2 rounded-full w-32 flex gap-2 items-center justify-center mt-4 cursor-pointer hover:font-semibold hover:bg-slate-200 transition">
+                    class="bg-white p-2 rounded-full w-32 flex gap-2 items-center justify-center mt-4 cursor-pointer hover:font-semibold hover:bg-slate-200 transition font-semibold">
                     <i class="fa-solid fa-arrow-right"></i>
                     <a href="#">
                         About Us
@@ -202,9 +202,87 @@
             </div>
         </section>
 
-        <!-- Works Process -->
+        <!-- Process Count Section -->
         <section></section>
+
+        <!-- Works Process -->
+        <section class="container mx-auto flex flex-col justify-center gap-5 mt-6 md:mt-12 lg:mt-20">
+            <!-- How we works -->
+            <div
+                class="bg-white p-2 rounded-full w-40 flex gap-2 items-center justify-center cursor-pointer hover:font-semibold hover:bg-slate-200 transition mx-auto font-semibold">
+                <i class="fa-solid fa-arrow-right"></i>
+                <a href="#">
+                    How We Works
+                </a>
+            </div>
+            <!-- Works Process Header -->
+            <div class="text-center mx-auto">
+                <h1 class="text-4xl font-black mb-3">
+                    Our Works Process
+                </h1>
+                <p class="w-10/12 max-w-[800px] mx-auto font-medium">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
+            </div>
+            <!-- Works Process Content Card -->
+            <div class="grid place-items-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
+                <!-- Card 1 -->
+                <div
+                    class="lg:max-w-[260px] max-w-[320px] bg-[#e7c1d3] p-4 rounded-xl hover:ring-2 ring-[#e7c1d3] ring-offset-1">
+                    <img src="./icons/concept.png" alt="Concept Icon">
+                    <h3 class="text-lg font-bold cursor-pointer hover:underline">
+                        Concept
+                    </h3>
+                    <small class="font-medium">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </small>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="lg:max-w-[260px] max-w-[320px] bg-[#efda6e] p-4 rounded-xl hover:ring-2 ring-[#efda6e] ring-offset-1">
+                    <img src="./icons/concept.png" alt="Concept Icon">
+                    <h3 class="text-lg font-bold cursor-pointer hover:underline">
+                        Concept
+                    </h3>
+                    <small class="font-medium">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </small>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="lg:max-w-[260px] max-w-[320px] bg-[#a4dac3] p-4 rounded-xl hover:ring-2 ring-[#a4dac3] ring-offset-1">
+                    <img src="./icons/concept.png" alt="Concept Icon">
+                    <h3 class="text-lg font-bold cursor-pointer hover:underline">
+                        Concept
+                    </h3>
+                    <small class="font-medium">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </small>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="lg:max-w-[260px] max-w-[320px] bg-[#77aaea] p-4 rounded-xl hover:ring-2 ring-[#77aaea] ring-offset-1">
+                    <img src="./icons/concept.png" alt="Concept Icon">
+                    <h3 class="text-lg font-bold cursor-pointer hover:underline">
+                        Concept
+                    </h3>
+                    <small class="font-medium">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </small>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </body>
 
