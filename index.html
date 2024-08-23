@@ -24,8 +24,8 @@
     <style type="text/tailwindcss">
         @layer utilities {
           .hiddenr {
-            /* display: none !important; */
-          }
+            display: none !important;
+            }
         }
     </style>
     <!-- Customizing Tailwind CSS Config -->
@@ -38,11 +38,12 @@
                 extend: {
                     backgroundImage: {
                         'white-gradient': "linear-gradient(to top, #fff, #eee)",
+                        'paper-bg': 'url(./images/discuss-bg.jpg)'
                     },
                     colors: {
                         'grelow': '#abef5f',
                         'grelow-light': '#abef5f80',
-
+                        'light-grelow': '#e5f3d6',
                     }
                 }
             }
@@ -54,7 +55,7 @@
 <body class="font-manrope bg-gray-100">
 
     <!-- Header Section -->
-    <header class="bg-white-gradient lg:py-8 md:py-6 py-4">
+    <header class="bg-white-gradient lg:py-10 md:py-6 py-4">
         <section class="container mx-auto mb-5">
             <!-- Navbar Section -->
             <nav class="">
@@ -140,10 +141,10 @@
     </header>
 
     <!-- Main Body About us + Work Section; -->
-    <main class="py-5">
+    <main class="py-8">
         <!-- About Us Section -->
         <section class="container mx-auto flex flex-col justify-center">
-            <!-- Background Image -->
+            <!-- Background Image and About Us - Button -->
             <div class="2xl:w-[1280px] 2xl:mx-auto">
                 <img class="-translate-x-12 hidden min-[1140px]:block" src="./icons/Vector.png" alt="">
                 <div
@@ -207,7 +208,7 @@
 
         <!-- Works Process -->
         <section class="container mx-auto flex flex-col justify-center gap-5 mt-6 md:mt-12 lg:mt-20">
-            <!-- How we works -->
+            <!-- How we works - Button -->
             <div
                 class="bg-white p-2 rounded-full w-40 flex gap-2 items-center justify-center cursor-pointer hover:font-semibold hover:bg-slate-200 transition mx-auto font-semibold">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -275,14 +276,65 @@
         </section>
     </main>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Discuss Next Project -->
+    <section class="bg-paper-bg bg-center bg-cover">
+        <section class="container mx-auto mt-6 md:mt-12 lg:mt-20 py-5 md:py-10 lg:py-20">
+            <!-- Let's Connect - Button -->
+            <div
+                class="bg-light-grelow p-2 rounded-full w-40 flex gap-2 items-center justify-center mt-4 cursor-pointer hover:font-semibold hover:bg-white transition font-semibold mx-auto mb-5">
+                <i class="fa-solid fa-arrow-right"></i>
+                <a href="#">
+                    Let's Connect
+                </a>
+            </div>
+            <!-- Discuss Header -->
+            <div class="text-center mx-auto">
+                <h1 class="text-4xl font-black mb-5">
+                    Let's Discuss Next Project
+                </h1>
+                <p class="w-10/12 max-w-[800px] mx-auto font-medium">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
+            </div>
+            <!-- Connect Form -->
+            <div>
+                <form class="max-w-4xl mx-auto py-10">
+                    <!-- Input First Name and Last Name -->
+                    <div class="flex gap-6 justify-center items-center flex-col sm:flex-row mb-5 px-10">
+                        <input
+                            class="shadow rounded-full p-3 text-gray-700 focus:outline-none focus:shadow-outline sm:w-[280px] md:w-[350px] w-full"
+                            type="text" placeholder="First Name*">
+                        <input
+                            class="shadow rounded-full p-3 text-gray-700 focus:outline-none focus:shadow-outline sm:w-[280px] md:w-[350px] w-full"
+                            type="text" placeholder="Last Name*">
+                    </div>
+                    <!-- Input Phone Number and Email -->
+                    <div class="flex gap-6 justify-center items-center flex-col sm:flex-row px-10">
+                        <input
+                            class="shadow rounded-full p-3 text-gray-700 focus:outline-none focus:shadow-outline sm:w-[280px] md:w-[350px] w-full"
+                            type="number" placeholder="Phone Number*">
+                        <input
+                            class="shadow rounded-full p-3 text-gray-700 focus:outline-none focus:shadow-outline sm:w-[280px] md:w-[350px] w-full"
+                            type="email" placeholder="Email Address*">
+                    </div>
+                    <!-- Write Massage Here -->
+                    <div class="mt-5 flex justify-center px-10">
+                        <input
+                            class="shadow rounded-3xl p-3 text-gray-700 focus:outline-none focus:shadow-outline pb-32 sm:w-[570px] md:w-[720px] w-full"
+                            type="text" placeholder="Write Your massage here">
+                    </div>
+                </form>
+            </div>
+            <!-- Send Mail - Button -->
+            <div
+                class="bg-grelow px-4 py-2 rounded-full flex items-center gap-2 cursor-pointer hover:bg-grelow-light hover:ring-2 ring-grelow transition mx-auto justify-center container md:max-w-[670px] sm:max-w-[500px] max-w-56">
+                <a class="font-extrabold" href="#">Book Consult</a>
+                <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 p-1 rounded-full">
+                </i>
+            </div>
+        </section>
+    </section>
 
 </body>
 
